@@ -1,4 +1,4 @@
-from visualizations.iVisualization import VisualizationInterface
+from iVisualization import VisualizationInterface
 from controls.controllers import ComPlaneController
 import panel as pn
 import numpy as np
