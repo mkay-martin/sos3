@@ -1,0 +1,108 @@
+\documentclass[sigconf]{acmart}
+
+\AtBeginDocument{ \providecommand\BibTeX{ Bib\TeX } }
+\setcopyright{acmlicensed}
+\copyrightyear{2026}
+\acmYear{2026}
+
+\acmConference[BI 2026]{Business Intelligence}{-}{-}
+
+\begin{document}
+
+\title{ SOS2025 Experiment Report - Group 21}
+%% ---Authors: Dynamically added ---
+
+          \author{Martin Kowarik}
+          \authornote{Student A, Matr.Nr.: 01634081}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{Matthias Frenzl}
+          \authornote{Student B, Matr.Nr.: 00753306}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+
+\begin{abstract}
+  This report documents the machine learning experiment for Group 21, following the CRISP-DM process model.
+\end{abstract}
+
+\ccsdesc[500]{Computing methodologies~Machine learning}
+\keywords{CRISP-DM, Provenance, Knowledge Graph, Machine Learning}
+
+\maketitle
+
+%% --- 1. Business Understanding ---
+\section{Business Understanding}
+
+\subsection{Data Source and Scenario}
+We use the Speed Dating dataset from local ARFF files. The data captures participant preferences, demographics, and outcomes from speed dating events and is suitable for unsupervised exploration with SOMs.
+
+\subsection{Business Objectives}
+Our goal is to explore latent structure in dating preferences, evaluate SOM quality across settings, and interpret cluster patterns with respect to participant attributes (e.g., race, age, interests).
+
+%% --- 2. Data Understanding ---
+\section{Data Understanding}
+\textbf{Dataset Description:} Describe the data set.
+
+The following features were identified in the dataset:
+
+\begin{table}[h]
+  \caption{Raw Data Features}
+  \label{tab:features}
+  \begin{tabular}{lp{0.2\linewidth}p{0.4\linewidth}}
+    \toprule
+    \textbf{Feature Name} & \textbf{Data Type} & \textbf{Description} \\
+    \midrule
+    date & dateTime> & This is a date field of... \\
+    number & integer> & This field describes.. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%% --- 3. Data Preparation ---
+\section{Data Preparation}
+\subsection{Data Cleaning}
+Describe your Data preparation steps here and include respective graph data.
+
+
+%% --- 4. Modeling ---
+\section{Modeling}
+
+\subsection{Hyperparameter Configuration}
+The model was trained using the following hyperparameter settings:
+
+\begin{table}[h]
+  \caption{Hyperparameter Settings}
+  \label{tab:hyperparams}
+  \begin{tabular}{lp{0.4\linewidth}l}
+    \toprule
+    \textbf{Parameter} & \textbf{Description} & \textbf{Value} \\
+    \midrule
+    
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Training Run}
+A training run was executed with the following characteristics:
+\begin{itemize}
+    \item \textbf{Algorithm:} 
+    \item \textbf{Start Time:} 
+    \item \textbf{End Time:} 
+    \item \textbf{Result:}  = 
+\end{itemize}
+
+%% --- 5. Evaluation ---
+\section{Evaluation}
+
+%% --- 6. Deployment ---
+\section{Deployment}
+
+\section{Conclusion}
+
+\end{document}
